@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BEFRCardMatchingGame.h"
 
 @interface BEFRViewController : UIViewController
 

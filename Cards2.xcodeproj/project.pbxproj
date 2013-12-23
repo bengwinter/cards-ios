@@ -21,6 +21,11 @@
 		D5AEEEC01867922F009816C6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5AEEEA21867922F009816C6 /* UIKit.framework */; };
 		D5AEEEC81867922F009816C6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D5AEEEC61867922F009816C6 /* InfoPlist.strings */; };
 		D5AEEECA1867922F009816C6 /* Cards2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEEC91867922F009816C6 /* Cards2Tests.m */; };
+		D5AEEED518679D03009816C6 /* BEFRCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEED418679D03009816C6 /* BEFRCard.m */; };
+		D5AEEED918679E89009816C6 /* BEFRDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEED818679E89009816C6 /* BEFRDeck.m */; };
+		D5AEEEDC1867A1E2009816C6 /* BEFRPlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEEDB1867A1E2009816C6 /* BEFRPlayingCard.m */; };
+		D5AEEEDF1867A4D4009816C6 /* BEFRPlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEEDE1867A4D4009816C6 /* BEFRPlayingCardDeck.m */; };
+		D5AEEEE21867A637009816C6 /* BEFRCardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEEEE11867A636009816C6 /* BEFRCardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		D5AEEEC51867922F009816C6 /* Cards2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cards2Tests-Info.plist"; sourceTree = "<group>"; };
 		D5AEEEC71867922F009816C6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D5AEEEC91867922F009816C6 /* Cards2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cards2Tests.m; sourceTree = "<group>"; };
+		D5AEEED318679D03009816C6 /* BEFRCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFRCard.h; sourceTree = "<group>"; };
+		D5AEEED418679D03009816C6 /* BEFRCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFRCard.m; sourceTree = "<group>"; };
+		D5AEEED718679E89009816C6 /* BEFRDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFRDeck.h; sourceTree = "<group>"; };
+		D5AEEED818679E89009816C6 /* BEFRDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFRDeck.m; sourceTree = "<group>"; };
+		D5AEEEDA1867A1E2009816C6 /* BEFRPlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFRPlayingCard.h; sourceTree = "<group>"; };
+		D5AEEEDB1867A1E2009816C6 /* BEFRPlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFRPlayingCard.m; sourceTree = "<group>"; };
+		D5AEEEDD1867A4D4009816C6 /* BEFRPlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFRPlayingCardDeck.h; sourceTree = "<group>"; };
+		D5AEEEDE1867A4D4009816C6 /* BEFRPlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFRPlayingCardDeck.m; sourceTree = "<group>"; };
+		D5AEEEE01867A636009816C6 /* BEFRCardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEFRCardMatchingGame.h; sourceTree = "<group>"; };
+		D5AEEEE11867A636009816C6 /* BEFRCardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEFRCardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +127,7 @@
 		D5AEEEA41867922F009816C6 /* Cards2 */ = {
 			isa = PBXGroup;
 			children = (
+				D5AEEED618679D0F009816C6 /* model */,
 				D5AEEEAD1867922F009816C6 /* BEFRAppDelegate.h */,
 				D5AEEEAE1867922F009816C6 /* BEFRAppDelegate.m */,
 				D5AEEEB01867922F009816C6 /* Main.storyboard */,
@@ -150,6 +166,24 @@
 				D5AEEEC61867922F009816C6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5AEEED618679D0F009816C6 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEEED318679D03009816C6 /* BEFRCard.h */,
+				D5AEEED718679E89009816C6 /* BEFRDeck.h */,
+				D5AEEEDA1867A1E2009816C6 /* BEFRPlayingCard.h */,
+				D5AEEEDD1867A4D4009816C6 /* BEFRPlayingCardDeck.h */,
+				D5AEEEDE1867A4D4009816C6 /* BEFRPlayingCardDeck.m */,
+				D5AEEEE01867A636009816C6 /* BEFRCardMatchingGame.h */,
+				D5AEEEE11867A636009816C6 /* BEFRCardMatchingGame.m */,
+				D5AEEEDB1867A1E2009816C6 /* BEFRPlayingCard.m */,
+				D5AEEED818679E89009816C6 /* BEFRDeck.m */,
+				D5AEEED418679D03009816C6 /* BEFRCard.m */,
+			);
+			name = model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,7 +286,12 @@
 			files = (
 				D5AEEEB51867922F009816C6 /* BEFRViewController.m in Sources */,
 				D5AEEEAB1867922F009816C6 /* main.m in Sources */,
+				D5AEEED518679D03009816C6 /* BEFRCard.m in Sources */,
+				D5AEEED918679E89009816C6 /* BEFRDeck.m in Sources */,
+				D5AEEEDF1867A4D4009816C6 /* BEFRPlayingCardDeck.m in Sources */,
 				D5AEEEAF1867922F009816C6 /* BEFRAppDelegate.m in Sources */,
+				D5AEEEDC1867A1E2009816C6 /* BEFRPlayingCard.m in Sources */,
+				D5AEEEE21867A637009816C6 /* BEFRCardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +421,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cards2/Cards2-Prefix.pch";
 				INFOPLIST_FILE = "Cards2/Cards2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cards2/Cards2-Prefix.pch";
 				INFOPLIST_FILE = "Cards2/Cards2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
