@@ -12,9 +12,10 @@
 @interface BEFRCardMatchingGame : NSObject
 
 @property (nonatomic, readonly) NSInteger score;
+@property (nonatomic) NSInteger numberCardMatch;
 
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(BEFRDeck*)deck;
 - (BEFRCard *)cardAtIndex:(NSUInteger)index;
-- (void)chooseCardAtIndex:(NSUInteger)index;
+- (NSString *)chooseCardAtIndex:(NSUInteger)index;
 
 @end

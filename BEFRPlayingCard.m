@@ -61,7 +61,26 @@
         } else if ([otherCard.suit isEqualToString:self.suit]) {
             score = 1;
         }
+    } else if ([otherCards count] > 1) {
+        int suitMatches = 0;
+        int rankMatches = 0;
+        for (BEFRPlayingCard *otherCard in otherCards) {
+            if (otherCard.rank == self.rank) rankMatches++;
+            if ([otherCard.suit isEqualToString:self.suit]) suitMatches++;
+        }
+        if ((suitMatches == [otherCards count]) && (rankMatches == [otherCards count])) {
+            score = 20;
+        } else if (rankMatches == [otherCards count]) {
+            score = 10;
+        } else if (suitMatches == [otherCards count]) {
+            score = 5;
+        } else if (rankMatches + 1 == [otherCards count]) {
+            score = 5;
+        } else if (suitMatches + 1 == [otherCards count]) {
+            score = 2;
+        }
     }
+    NSLog(@"Match score: %d", score);
     return score;
 }
 
